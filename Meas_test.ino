@@ -206,7 +206,7 @@ void callback(char *topic, byte *payload, unsigned int length) {
 void setup() {
 
   Serial.begin(9600);
-
+  WiFi.mode(WIFI_STA);
   // WiFi setup
   WiFi.begin(ssid, password);
 
